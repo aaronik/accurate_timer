@@ -1,5 +1,5 @@
 {
-  "name": "accurate_timer",
+  "name": "accurate-timer",
   "version": "0.0.1",
   "description": "An accurate timer using requestAnimationFrame() and performance.now(), defaulting to setInterval when needed.",
   "main": "accurate_timer.js",
