@@ -1,6 +1,7 @@
 ### An accurate, multienvironment timer
+# accurate_timer uses requestAnimationFrame() and performance.now(), defaulting to setInterval if it's used in a non-browser environment.
 
-# Supported environments
+## Supported environments
 * Node.js (All major versions)
 * Chrome*
 * Firefox*
