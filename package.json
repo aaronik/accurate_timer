@@ -1,0 +1,29 @@
+{
+  "name": "accurate_timer",
+  "version": "0.0.1",
+  "description": "An accurate timer using requestAnimationFrame() and performance.now(), defaulting to setInterval when needed.",
+  "main": "accurate_timer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Aaronik/accurate_timer.git"
+  },
+  "keywords": [
+    "timer",
+    "accurate",
+    "accurate_timer",
+    "aaron",
+    "sullivan",
+    "javascript",
+    "precise",
+    "precise_timer"
+  ],
+  "author": "Aaron Sullivan (Aaronik)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aaronik/accurate_timer/issues"
+  },
+  "homepage": "https://github.com/Aaronik/accurate_timer"
+}
