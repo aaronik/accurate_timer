@@ -1,12 +1,13 @@
 (function(root){
 
-	var Timer = root.Timer = function(callback, interval){
-		if (window) {
+	var Timer = function(callback, interval){	
+		this.raf = 		window.requestAnimationFrame 
+							|| 	window.mozRequestAnimationFrame
+							|| 	window.webkitRequestAnimationFrame
+							|| 	window.msRequestAnimationFrame;
+
+		if (this.raf) {
 			this.type = 'requestAnimationFrame';
-			this.raf = 		window.requestAnimationFrame 
-								|| 	window.mozRequestAnimationFrame
-								|| 	window.webkitRequestAnimationFrame
-								|| 	window.msRequestAnimationFrame;
 		} else {
 			this.type = 'setInterval';
 		}
@@ -17,13 +18,16 @@
 	}
 
 	Timer.prototype.start = function(){
+		this.stop();
 		var that = this;
 
 		switch (this.type) {
 			case 'requestAnimationFrame':
+				console.log('using raf')
 				that._startRAF();
 				break;
 			case 'setInterval':
+				console.log('using SI')
 				that._startSI();
 				break;
 		}
@@ -74,5 +78,3 @@
 	return Timer
 
 })(this);
-
-window.t = new this.Timer(function(time){console.log(time)}, 1000)
