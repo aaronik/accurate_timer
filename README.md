@@ -9,7 +9,7 @@ Based on my own (unscientific) measurements, the timer in a node.js environment 
 	var timer = new Timer(<callback>, <interval>);
 	```
 
-	The callback will be called every <interval> milliseconds.
+	The callback will be called every `interval` milliseconds.
 
 * start / stop the timer:
 	```js
