@@ -14,11 +14,13 @@
     "timer",
     "accurate",
     "accurate_timer",
+    "accurate-timer",
     "aaron",
     "sullivan",
     "javascript",
     "precise",
-    "precise_timer"
+    "precise_timer",
+    "precise-timer"
   ],
   "author": "Aaron Sullivan (Aaronik)",
   "license": "MIT",
